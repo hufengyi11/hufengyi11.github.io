@@ -51,9 +51,50 @@ body {
   background-color: #ddd; /* Grey background color */
   color: black; /* Black text color */
   }
+  /* Ensure proper sizing */
+  * {
+    box-sizing: border-box;
+  }
+
+  /* Column container */
+  .row { 
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  /* Create two unequal columns that sits next to each other */
+  /* Sidebar/left column */
+  .side {
+    flex: 30%; /* Set the width of the sidebar */
+    background-color: #f1f1f1; /* Grey background color */
+    padding: 20px; /* Some padding */
+    }
+
+  /* Main column */
+  .main { 
+    flex: 70%; /* Set the width of the main content */
+    background-color: white; /* White background color */
+    padding: 20px; /* Some padding */
+    }
+    /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 700px) {
+      .row { 
+        flex-direction: column;
+      }
+    }
+
+    /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+    @media screen and (max-width: 400px) {
+      .navbar a {
+        float: none;
+        width: 100%;
+      }
+    }
 }
-
-
+.content {
+  max-width: 500px;
+  margin: auto;
+}
 </style>
 </head>
 <body>
@@ -74,21 +115,16 @@ body {
 
 
 
-
-  <section style="max-width:600px">
-
-  <p>If you are a talent with a special skill looking for some extra income or an entrepreneur looking for a skill or service, you can click the link <a href="/register-my-skill-interest.html">Register</a>. You need to fill in the contact info, your skills/requirements, details, the price range to offer, and You can also price the offer (providing/receiving service). This site won’t provide transaction tools for now. After filling the form, you will receive an email about people matching the skills you need/have.</p>
-
-  <p>If you want to <a href="Browse.html">browse and select without disclosing your information</a>, you will see the ID, skills, details and price range. If you want to contact anyone, fill in the contact form on the top and bottom of the page. You will need to fill in the ID you want to contact, your contact information, and a convincing message. When it’s submitted, the other person will receive and make the decision of accepting or rejecting the offer. Please be nice and repectful, spam will be filtered.</p>
-
-
-  </section>
-
-
-
-  <div class="footer">
-
+  <div class="content">
+    <p>If you are a talent with a special skill looking for some extra income or an entrepreneur looking for a skill or service, you can click the link <a href="/register-my-skill-interest.html">Register</a>. You need to fill in the contact info, your skills/requirements, details, the price range to offer, and You can also price the offer (providing/receiving service). This site won’t provide transaction tools for now. After filling the form, you will receive an email about people matching the skills you need/have.</p>
+    <p>If you want to <a href="Browse.html">browse and select without disclosing your information</a>, you will see the ID, skills, details and price range. If you want to contact anyone, fill in the contact form on the top and bottom of the page. You will need to fill in the ID you want to contact, your contact information, and a convincing message. When it’s submitted, the other person will receive and make the decision of accepting or rejecting the offer. Please be nice and repectful, spam will be filtered.</p>
   </div>
+
+
+
+
+
+  <div class="footer"></div>
 
 
 
