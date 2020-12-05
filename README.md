@@ -7,3 +7,4 @@ Have a look around.
 ## How this platform works: 
 
 People can register their interests and skills, when new users registered on the website, they will receive notifications of matches. 
+
