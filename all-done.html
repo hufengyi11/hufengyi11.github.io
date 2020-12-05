@@ -1,0 +1,86 @@
+<!DOCTYPE html> 
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    }
+  .header {
+    padding: 80px; /* some padding */
+    text-align: center; /* center the text */
+    background: #1abc9c; /* green background */
+    color: white; /* white text color */
+    }
+  /* Increase the font size of the <h1> element */
+  .header h1 {
+    font-size: 40px;}
+    /* Column container */
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  .content {
+    max-width: 500px;
+    margin: auto;
+  }
+  /* Add a black background color to the top navigation */
+  .topnav {
+    background-color: #333;
+    overflow: hidden;
+  }
+
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  .footer {
+    background-color: #F1F1F1;
+    text-align: center;
+    padding: 10px;
+  }
+  </style>
+	<title>Thank you!</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="TSW WebCoder">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <div class="topnav">
+    <a href="index.html">Home</a>
+    <a href="register-my-skill-interest.html">Regiser</a>
+    <a href="browse.html">Browse</a>
+  </div>
+  <div class="header">
+    <h1>Your interest/skill has been registered</h1>
+    <p>Please click <a href="index.html" style="text-decoration: none; color #0986d9 !important;;">here </a> if you are not redirected within a few seconds.</p>
+  </div>
+  
+    <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+        setTimeout(function () {
+            window.location.replace("index.html"); //will redirect to main page (index.html)
+        }, 3000); //will call the function after 3 secs.
+    </script>   
+</body>
+</html>
